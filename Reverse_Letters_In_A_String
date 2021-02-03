@@ -1,0 +1,15 @@
+def revrev(to_rev):
+
+    splitString=to_rev.split(' ')
+    newString=""
+
+    for str in splitString:
+        i=len(str)-1
+        while(i>=0):
+            newString=newString+(str[i])
+            i-=1
+        newString=newString+(" ")
+    print(''.join(newString))
+   
+
+revrev("The quick brown fox")
