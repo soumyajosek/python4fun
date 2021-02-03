@@ -4,10 +4,10 @@ def revrev(to_rev):
     newString=""
 
     for str in splitString:
-        i=len(str)-1
-        while(i>=0):
-            newString=newString+(str[i])
-            i-=1
+        count=len(str)-1
+        while(count>=0):
+            newString=newString+(str[count])
+            count-=1
         newString=newString+(" ")
     print(''.join(newString))
    
